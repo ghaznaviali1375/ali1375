@@ -208,7 +208,7 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "onservice",
+  "onservice",
     "inrealm",
     "ingroup",
     "inpm",
@@ -237,26 +237,16 @@ function create_config( )
     "echo",
     "plugins",
     "time",
-    "welcome"
+    "welcome",
+    "saveplug",
+    "plugins"
     },
-    sudo_users = {144658773,114934518,94746365},--Sudo users
+    sudo_users = {231053528},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Sbss Bot V2 Beta
     An Advanced Anti Spam Bot Forked On TeleSeed
-    
-    Develpoed By:
-    @sina7sk
-    Manager:
-    @yellowhat
-    Founder:
-    @amirho3in
-    
-    Special Thank To:
-    Mehr Pouya
-    Arman
-    IM/-\N
-    Creed Is Dead
+    این ربات توسط علی غزنوی نوشته شده ات
     
 ]],
     help_text_realm = [[
@@ -264,7 +254,7 @@ See Patterns In Github
 ]],
     help_text = [[
 
-  لیست دستورات :
+  لیست دستورات ربات ضد اسپم تلگفا :
 
 اخراج [آیدی،کد،ریپلای] 👤
 شخص مورد نظر از گروه اخراج ميشود
@@ -343,9 +333,7 @@ _________________________________________
 _________________________________________
 _________________________________________
 _________________________________________
-ليست سودوها :@Cia_00_07
-@sina7sk
-@amirho3in
+
 ]]
   }
   serialize_to_file(config, './data/config.lua')
